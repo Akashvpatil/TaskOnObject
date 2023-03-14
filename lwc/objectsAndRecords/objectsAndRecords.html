@@ -1,0 +1,46 @@
+<template>
+    <!--
+    <div class="slds-text-align_center">
+       <div class="slds-text-align_center" style="margin: 0 auto;">
+           <h1>Select Object</h1>
+                <lightning-combobox name="ObjectList" onchange={HandleFields} value={selectedObject}
+                    options={objectList} class="small-combobox" placeholder="Object List">Object</lightning-combobox>
+                    <lightning-button variant="brand" label="create Records" onclick={createrecord}></lightning-button>
+         </div>
+                  
+    </div>  
+    -->
+    <div class="slds-grid slds-gutters" >
+       
+        <div class="slds-col slds-size_1-of-12 slds-m-top_large slds-m-right_none" style="height:20px " >
+            <span>Select Object</span>
+        </div>
+        
+          <div class="slds-col slds-size_8-of-12  ">
+             <lightning-combobox name="ObjectList" onchange={HandleFields} value={selectedObject}
+                options={objectList} placeholder="Object List">Object</lightning-combobox>
+               
+          </div>
+          <div class="slds-col slds-size_3-of-12 slds-m-top_medium">
+            <lightning-button variant="brand" label="create Records" onclick={createrecord}></lightning-button>
+
+        </div>  
+    </div>
+
+    <div class="slds-grid slds-gutters">
+        <lightning-layout-item>
+        <div class="slds-col">
+           
+                <c-field-Names onchangeinfields={Handlecheckbox}></c-field-Names>
+        </div>
+    </lightning-layout-item>
+        <div class="slds-col">
+            <lightning-layout-item>
+                <c-records></c-records>
+
+            </lightning-layout-item>
+        </div>
+
+    </div>
+
+</template>

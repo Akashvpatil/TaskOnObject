@@ -1,0 +1,26 @@
+.left{
+    float:left;
+    width: 25%;
+}
+.Right{
+    float: right;
+    width: 75%;
+}
+.small-combobox {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .container label {
+    margin-right: 8px;
+    
+  }
+
+  .labelName{
+    margin-top: 30px;
+  }

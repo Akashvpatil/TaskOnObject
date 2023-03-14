@@ -1,0 +1,37 @@
+<template>
+    <!--  <template if:true={GotTheRecords}>
+        <lightning-combobox name="RecordList" label="record"  value={recors} options={recordList} placeholder="recordList List">Object</lightning-combobox>
+    </template> -->
+
+
+
+
+          
+           <!--     <template if:true={GotTheRecords}>
+                    <lightning-datatable
+                        data={recordList}
+                        columns={columnsName}
+                        key-field="Id">
+                    </lightning-datatable>
+                </template>
+                <template if:false={GotTheRecords}>
+                    <p>No records found.</p>
+                </template>-->
+           
+                <template if:true={GotTheRecords}>
+                  <lightning-datatable
+                        key-field="Id"
+                        data={recordList}
+                        columns={columns}
+                        onrowaction={handleRowActions}
+                        hide-checkbox-column="true">
+                    </lightning-datatable>
+                </template>
+                  
+                  
+                   
+                 
+                  
+                
+
+</template>
